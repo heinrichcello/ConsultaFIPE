@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta FIPE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Consulta de Códigos FIPE</h1>
+    <form id="form-fipe">
+        <table>
+        <label for="marca">Marca:</label>
+        <select id="marca" name="marca" onchange="carregarModelos()"
+            <option value="">Selecione uma Marca</option>
+        </select>
+        </table>
+        <table>
+        <label for="modelo">Modelo:</label>
+  <select id="modelo" name="modelo" onchange="carregarAnos()"  ></select>
+        </select>  
+        </table>
+        <table>     
+         <label for="ano">Ano:</label>
+        <select name="ano" id="ano" ></select>
+        </table>
+        <button type="submit">Consultar</button>
+    </form>
+
+    <div id="resultado"></div>
+<script src="script.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
